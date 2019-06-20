@@ -74,6 +74,7 @@ ages_list = [
 ages_list[17] = 22
 
 # Searching through a list. Slow!
+# for `some_new_variable` in `the_thing_were_searching_through`:
 for thing in ages_list:
     if thing == "Andrew Morgan":
         return thing + 1
@@ -86,3 +87,17 @@ var_three # 3
 
 
 ages_list <--
+
+# default argument values example
+
+def create_user(
+    username, # required
+    password, # required
+    avatar="", # optional
+    bio="", # optional
+    relationship_status="", # optional, default ""
+    religion="christianity", # optional, default "christianity"
+):
+    return
+
+create_user("bob", "ilikecheetos", bio="I REAAAAALLY LIKE CHEETOS DON'T HACK ME!")
